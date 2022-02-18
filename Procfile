@@ -1,0 +1,1 @@
+web: gunicorn feezz.wsgi --log-file -
