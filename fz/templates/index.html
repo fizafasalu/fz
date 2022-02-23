@@ -2,17 +2,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="{% static 'js/new.js' %}"></script>
+  <script>
+function fun(){
+  var firstname="fizaa"
+  var lastname="fasalu"
+  var value=6
+  console.log(typeof(name))
+  console.log(firstname)
+  console.log(firstname+lastname)
+  console.log(typeof(value))
+}
+
+  </script>
   <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="{% static '/css/style.css'}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
 <body style="background-color:beige">
-    <h1 style="color:blue; text-align:center">Login Page</h1>
+    <h1 id="login">Welcome</h1>
+    <h1 id="heading">Login</h1>
     <form action="">
-      login  <input type="text" name="login">
+      login        <input type="text" name="login">
       password  <input type="password" name="password" >
+      <input type="button" value="login" onclick=fun()>
+      <!-- <button onclick="fun()">show</button> -->
     </form>
 </body>
 </html>
