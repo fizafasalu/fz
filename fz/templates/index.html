@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <script src="{% static 'js/new.js' %}"></script>
-  <script>
+<script>
 function fun(){
   var firstname="fizaa"
   var lastname="fasalu"
@@ -13,7 +13,25 @@ function fun(){
   console.log(firstname+lastname)
   console.log(typeof(value))
 }
-
+function fun1(){
+  var a=prompt('enter a number')
+  if(a%2==0){
+    alert("its divisible by 2")
+  }
+  else{
+    alert("its not divisible by 2")
+  }
+}
+  function fun2(){
+  // var student={fname:"Donald" ,lname:"David" ,age:18};
+  for (i=0;i<6;i++){
+    document.write('<br>')
+   for(j=0;j<i;j++)
+  {
+    document.write('*');
+  }
+}
+}
   </script>
   <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,8 +47,8 @@ function fun(){
     <form action="">
       login        <input type="text" name="login">
       password  <input type="password" name="password" >
-      <input type="button" value="login" onclick=fun()>
-      <!-- <button onclick="fun()">show</button> -->
+      <input type="button" value="login" onclick='fun2()'>
+     
     </form>
 </body>
 </html>
